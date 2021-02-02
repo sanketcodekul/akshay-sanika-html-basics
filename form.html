@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+
+        <fieldset>
+            
+            <legend>Registration Form</legend>
+        
+        <label>First Name</label>
+        <input type="text" required><br>
+        <label>Email</label>
+        <input type="email" required><br>
+        <label>Gender</label>
+        <input type="radio" name="gender">
+        <label>Male</label>
+        <input type="radio" name="gender">
+        <label>Female</label>
+        <input type="radio" name="gender">
+        <label>others</label><br>
+
+        <label for="">Languages</label>
+        <input type="checkbox">
+        <label for="">English</label>
+        <input type="checkbox">
+        <label for="">Marathi</label>
+        <input type="checkbox">
+        <label for="">Hindi</label><br>
+
+        <label for="">Age</label>
+        <input type="number"><br>
+
+        <label>Password</label>
+        <input type="password" required><br>
+
+        <input type="text" readonly><br>
+
+        <input type="text" placeholder="Name"><br>
+
+        <label>Marks out of</label>
+        <input type="text" placeholder="100" disabled><br>
+
+        <!-- Dropdown list
+        select tag is used to create dropdown list
+        inside select tag the lists are written inside option tag -->
+        <select>
+            <optgroup label="Frontend">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+            </optgroup>
+            <optgroup label="Backend">
+                <option value="java">Java</option>
+                <option value="spring">Spring</option>
+                <option value="database">Database</option>
+            </optgroup> 
+            <optgroup label="others">
+                <option value="java">Java</option>
+                <option value="spring">Spring</option>
+                <option value="database">Database</option>
+            </optgroup>          
+        </select><br>
+
+        <!-- datalist to create a predefined list in text input field -->
+        <input type="text" list="tech"><br>
+           <datalist id="tech">
+            <option>HTML</option>
+            <option>CSS</option>
+           </datalist>
+
+           <textarea name="" id="" cols="30" rows="10"></textarea><br>
+<input type="text" size="15">
+
+        <input type="submit">
+
+    </fieldset>
+    </form>
+    
+</body>
+</html>
