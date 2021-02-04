@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+
+    <style>
+        label{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <form autocomplete="off">
+        <fieldset>
+            <label for="name">Full Name</label>
+            <input id="name" type="text" size="30" required minlength="6" maxlength="8"><br>
+
+            <input type="text" list="a">
+<datalist  id="a">
+    <option >Sanket</option>
+    <option >Priyanka</option>
+    <option >Akshay</option>
+    <option >Sanika</option>
+</datalist>
+
+            <label for="age">Age</label>
+            <input id="age" type="number" min="5" max="10" step="5" size="30"><br>
+            <label for="email">Email</label>
+            <input id="email" type="email" required>
+            <label for="password">Password</label>
+            <input type="password"><br>
+            <label for="lang">Languages</label>
+            <label >English</label>
+            <input type="checkbox">
+            <label >Marathi</label>
+            <input type="checkbox">
+            <label >Hindi</label>
+            <input type="checkbox"><br>
+            <label for="gender">Gender</label>
+            <label >Male</label>
+            <input name="gender" type="radio">
+
+            <label >Female</label>
+            <input name="gender" type="radio">
+
+            <label >others</label>
+            <input name="gender" type="radio"><br>
+
+            <label for="dob">Date Of Birth</label>
+            <input id="dob" type="date"><br>
+
+            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+            <input type="file"><br>
+            <input type="search"><br>
+            <input type="range"><br>
+            <input type="color"><br>
+
+
+            <label for="marks">Marks Obtained</label>
+            <input type="text">
+
+            <input type="image"src="./image.png" height="30px" width="40px">
+
+            <label for="marks">Marks out of</label>
+            <input type="text" disabled value="100">
+
+            <select name="course" id="tech">
+                <optgroup label="Backend">
+                    <option value="java">Java</option>
+                    <option value="spring">Spring</option>
+                    <option value="db">Database</option>
+                </optgroup>
+                <optgroup label="Frontend">
+                    <option value="javascript">Javascript</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                </optgroup>
+                
+            </select><br>
+
+            <textarea name="" id="" cols="30" rows="10"></textarea><br>
+
+            <input type="submit">
+            <input type="button" value="close">
+            <button type="reset">Hello</button>
+            <input type="reset">
+
+
+           
+
+          
+
+        </fieldset>
+        
+    </form>
+</body>
+</html>
